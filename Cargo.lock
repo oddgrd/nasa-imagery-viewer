@@ -1420,7 +1420,7 @@ dependencies = [
 
 [[package]]
 name = "nasaapodviewer-frontend"
-version = "136.0.2"
+version = "136.0.3"
 dependencies = [
  "chrono",
  "gloo-net 0.5.0",
@@ -1432,7 +1432,7 @@ dependencies = [
 
 [[package]]
 name = "nasaapodviewer-server"
-version = "136.0.2"
+version = "136.0.3"
 dependencies = [
  "rocket",
  "shuttle-rocket",

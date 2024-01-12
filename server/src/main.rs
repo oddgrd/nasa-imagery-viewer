@@ -2,11 +2,11 @@
 
 // dependencies
 use rocket::{Build, Rocket};
-use rocket::fs::{relative, FileServer};
+use rocket::fs::FileServer;
 
 // function to create rocket instance
 fn create() -> Rocket<Build> {
-    rocket::build().mount("/", FileServer::from(relative!("static")))
+    rocket::build().mount("/", FileServer::from("static"))
 }
 
 #[shuttle_runtime::main]
