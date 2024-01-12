@@ -6,7 +6,7 @@ use rocket::fs::{relative, FileServer};
 
 // function to create rocket instance
 fn create() -> Rocket<Build> {
-    rocket::build().mount("/", FileServer::from(relative!("dist")))
+    rocket::build().mount("/", FileServer::from(relative!("static")))
 }
 
 #[shuttle_runtime::main]

@@ -1,8 +1,8 @@
 [package]
-name = "nasaapodviewer-server"
+name = "nasaapodviewer"
 version = "136.0.0"
 edition = "2021"
-authors = [ "Jeffery D. Mitchell", "<sentinel1909@jeff-mitchell.dev>" ]
+authors = [ "Jeffery D. Mitchell", "<crusty-rustacean@jeffmitchelldev.com>" ]
 publish = false
 
 [dependencies]
