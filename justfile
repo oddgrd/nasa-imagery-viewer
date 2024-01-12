@@ -12,4 +12,4 @@ shuttle-run:
 
 # deploy to shuttle
 shuttle-deploy:
-  rm -r dist && cp -r server/dist/ dist && cargo shuttle project restart && cargo shuttle deploy
+  cargo shuttle project restart && cargo shuttle deploy
