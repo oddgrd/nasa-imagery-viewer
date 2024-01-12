@@ -1,0 +1,7 @@
+# Shuttle project name configuration file
+
+name="nasaapodviewer"
+
+assets = [
+  "static/*",
+]
