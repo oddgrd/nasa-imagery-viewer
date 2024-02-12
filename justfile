@@ -1,4 +1,9 @@
 # start development
+
+# set Powershell
+set shell := ["powershell", "-c"]
+
+# start the site in dev mode
 run-dev:
   cd frontend && trunk serve --open
 
