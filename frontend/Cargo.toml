@@ -1,10 +1,6 @@
 [package]
 name = "nasaapodviewer-frontend"
-<<<<<<< HEAD
 version = "136.0.3"
-=======
-version = "138.0.2"
->>>>>>> 11bbb750dab4c7b1e17c677f495af3fcf4041528
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
