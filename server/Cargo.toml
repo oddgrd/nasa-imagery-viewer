@@ -1,12 +1,12 @@
 [package]
 name = "nasaapodviewer-server"
-version = "143.0.0"
+version = "1.44.0"
 edition = "2021"
 authors = [ "Jeffery D. Mitchell", "<crusty-rustacean@jeffmitchelldev.com>" ]
 publish = false
 
 [dependencies]
 rocket = "0.5.0"
-shuttle-rocket = "0.43.0"
-shuttle-runtime = "0.43.0"
+shuttle-rocket = "0.44.0"
+shuttle-runtime = "0.44.0"
 tokio = "1.37.0"
