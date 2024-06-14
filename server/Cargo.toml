@@ -7,6 +7,6 @@ publish = false
 
 [dependencies]
 rocket = "0.5.0"
-shuttle-rocket = "0.45.0"
-shuttle-runtime = "0.45.0"
+shuttle-rocket = "0.46.0"
+shuttle-runtime = "0.46.0"
 tokio = "1.37.0"
