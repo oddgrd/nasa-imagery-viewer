@@ -1,6 +1,6 @@
 # Shuttle project name configuration file
 
-name="nasaapodviewer"
+name="nasa-imagery-viewer"
 
 assets = [
   "static/*",

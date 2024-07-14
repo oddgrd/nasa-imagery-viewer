@@ -1,12 +1,12 @@
 [package]
-name = "nasaapodviewer-server"
-version = "1.45.0"
+name = "nasa-imagery-viewer-server"
+version = "1.46.0"
 edition = "2021"
-authors = [ "Jeffery D. Mitchell", "<crusty-rustacean@jeffmitchelldev.com>" ]
+authors = [ "Jeffery D. Mitchell", "<sentinl1909@jeff-mitchell.dev>" ]
 publish = false
 
 [dependencies]
 rocket = "0.5.0"
 shuttle-rocket = "0.46.0"
 shuttle-runtime = "0.46.0"
-tokio = "1.37.0"
+tokio = "1"

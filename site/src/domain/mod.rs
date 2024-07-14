@@ -2,7 +2,6 @@
 
 // dependencies
 use serde::Deserialize;
-use yew::Properties;
 
 // struct to represent the data returned from the NASA APOD API
 #[derive(Deserialize, Debug, Clone)]
@@ -29,10 +28,4 @@ impl Default for NASAData {
             hdurl: Some("".to_string()),
         }
     }
-}
-
-// struct for props data
-#[derive(Properties, PartialEq)]
-pub struct Props {
-    pub year: i32,
 }

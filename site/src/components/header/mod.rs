@@ -4,8 +4,8 @@
 use yew::{function_component, html, Html};
 
 // the site header component
-#[function_component]
-pub fn Header() -> Html {
+#[function_component(Header)]
+pub fn header() -> Html {
     html! {
         <header>
             <h1> { "NASA Imagery Viewer" }</h1>

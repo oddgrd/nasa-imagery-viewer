@@ -6,12 +6,14 @@ use gloo_net::http::Request;
 use url::Url;
 use yew::{classes, function_component, html, use_effect_with, use_state, Html};
 
+const NASA_API_KEY: &str = "lsULnkmChaJlS3fZO85M3cnGA8TFCAm2peEfd9QS";
+
 // the content component, renders select data returned from the NASA APOD API
 #[function_component]
 pub fn Content() -> Html {
-    let nasa_api_key = "lsULnkmChaJlS3fZO85M3cnGA8TFCAm2peEfd9QS";
-    let api_key = ["apod?api_key=", nasa_api_key].concat();
-    let api_url = Url::parse("https://api.nasa.gov/planetary/").unwrap();
+    let key = NASA_API_KEY;
+    let api_key = ["apod?api_key=", key].concat();
+    let api_url = Url::parse("https://api.nasa.gov/planetary/").expect("Failed to parse the url to fetch data from.");
     let api_url = api_url.join(&api_key).expect("Failed to join URL");
     let empty_data = NASAData::default();
     let fetched_data = use_state(|| empty_data);
