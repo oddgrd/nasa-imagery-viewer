@@ -1306,7 +1306,7 @@ dependencies = [
 
 [[package]]
 name = "nasa-imagery-viewer-server"
-version = "1.46.0"
+version = "1.46.1"
 dependencies = [
  "rocket",
  "shuttle-rocket",

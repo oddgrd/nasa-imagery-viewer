@@ -1,12 +1,21 @@
 // src/main.rs
 
 // dependencies
-use rocket::{Build, Rocket};
+use rocket::{Build, Rocket, get, routes};
 use rocket::fs::FileServer;
+use rocket::http::Status;
+
+// health_check handler
+#[get("/health_check")]
+fn health_check() -> Status {
+    Status::Ok
+}
 
 // function to create rocket instance
 fn create() -> Rocket<Build> {
-    rocket::build().mount("/", FileServer::from("static"))
+    rocket::build()
+        .mount("/api", routes!(health_check))
+        .mount("/", FileServer::from("static"))
 }
 
 #[shuttle_runtime::main]

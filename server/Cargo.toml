@@ -1,6 +1,6 @@
 [package]
 name = "nasa-imagery-viewer-server"
-version = "1.46.0"
+version = "1.46.1"
 edition = "2021"
 authors = [ "Jeffery D. Mitchell", "<sentinl1909@jeff-mitchell.dev>" ]
 publish = false
