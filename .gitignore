@@ -1,13 +1,9 @@
 # nasa-apod-viewer crate .gitignore file
 
+.DS_Store
+
 .vscode
 
 /target
-
-/frontend/target
-
-/frontend/dist
-
-/server/target
 
 /static

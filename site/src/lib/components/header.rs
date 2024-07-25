@@ -8,8 +8,8 @@ use yew::{function_component, html, Html};
 pub fn header() -> Html {
     html! {
         <header>
-            <h1> { "NASA Imagery Viewer" }</h1>
-            <h2> { "...a new photo or video every day"}</h2>
+            <h1 class="text-2xl"> { "NASA Imagery Viewer" }</h1>
+            <h2 class="text-xl"> { "...a new photo or video every day"}</h2>
         </header>
     }
 }

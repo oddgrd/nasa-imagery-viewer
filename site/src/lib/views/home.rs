@@ -9,8 +9,8 @@ use yew::{classes, function_component, html, use_effect_with, use_state, Html};
 const NASA_API_KEY: &str = "lsULnkmChaJlS3fZO85M3cnGA8TFCAm2peEfd9QS";
 
 // the content component, renders select data returned from the NASA APOD API
-#[function_component]
-pub fn Content() -> Html {
+#[function_component(Home)]
+pub fn home() -> Html {
     let key = NASA_API_KEY;
     let api_key = ["apod?api_key=", key].concat();
     let api_url = Url::parse("https://api.nasa.gov/planetary/").expect("Failed to parse the url to fetch data from.");
@@ -42,6 +42,7 @@ pub fn Content() -> Html {
                 <h3>{ "Title: " } {&fetched_data.title}</h3>
                 <h3>{ "Explanation: " } </h3>
                 <p> {&fetched_data.explanation} </p>
+                <br />
                 if &fetched_data.media_type == "image"  {
                     if let Some(hdurl) = fetched_data.hdurl.clone() {
                         <h3>{ "Image: " }</h3>
