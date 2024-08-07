@@ -3,5 +3,5 @@
 name="nasa-imagery-viewer"
 
 assets = [
-  "static/*",
+  "public/*",
 ]

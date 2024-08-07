@@ -1,9 +1,11 @@
 # nasa-apod-viewer crate .gitignore file
 
+# MacOS system files
 .DS_Store
 
+# Visual Studio Code settings
 .vscode
 
+# Build artifacts
 /target
-
-/static
+/public
