@@ -2,6 +2,6 @@
 
 name="nasa-imagery-viewer"
 
-assets = [
+build_assets = [
   "public/*",
 ]

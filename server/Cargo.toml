@@ -1,7 +1,7 @@
 [package]
 name = "nasa-imagery-viewer-server"
 authors = ["Jeffery D. Mitchell", "<sentinel1909@jeff-mitchell.dev>"]
-version = "1.0.0"
+version = "2.0.0"
 edition = "2021"
 description = "A full stack site, built with Axum and Yew, that fetches and displays the daily image/video from the NASA APOD API"
 readme = "README.md"
@@ -11,6 +11,6 @@ publish = false
 
 [dependencies]
 axum = "0.7.5"
-shuttle-axum = "0.47.0"
-shuttle-runtime = "0.47.0"
-tower-http = { version = "0.5.2", features = [ "fs"] }
+shuttle-axum = { git = "https://github.com/shuttle-hq/shuttle" }
+shuttle-runtime = { git = "https://github.com/shuttle-hq/shuttle" }
+tower-http = { version = "0.6.0", features = [ "fs"] }
