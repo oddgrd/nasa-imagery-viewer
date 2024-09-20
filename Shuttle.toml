@@ -1,7 +1,3 @@
-# Shuttle project name configuration file
-
-name="nasa-imagery-viewer"
-
 build_assets = [
-  "public",
+  "static",
 ]
