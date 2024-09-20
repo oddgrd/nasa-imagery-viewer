@@ -9,3 +9,8 @@
 # Build artifacts
 /target
 /public
+/static
+
+# logs
+logs.txt
+
